@@ -1662,3 +1662,115 @@ footer {
         padding: 60px 5%;
     }
 }
+
+/* Post-it Sticky Note Widget */
+.post-it {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 280px;
+    background: #fff740;
+    padding: 2.5rem 1.5rem 1.5rem;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4),
+        inset 0 0 40px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    transform: rotate(-3deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+    border-radius: 2px;
+}
+
+.post-it:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.post-it.hidden {
+    display: none;
+}
+
+.post-it-close {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.post-it-close:hover {
+    color: #000;
+}
+
+.post-it-content {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    text-align: center;
+}
+
+.post-it-content h3 {
+    font-size: 1.2rem;
+    color: #ef4444;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.post-it-content h4 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.post-it-content ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.post-it-content li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.post-it-content li::before {
+    content: "📌";
+    position: absolute;
+    left: 0;
+}
+
+.post-it-cta {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: #000;
+    color: #fff740;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.post-it-cta:hover {
+    transform: translateY(-2px);
+    background: #222;
+}
+
+/* Responsive adjustments for Post-it */
+@media (max-width: 600px) {
+    .post-it {
+        bottom: 20px;
+        right: 15px;
+        width: 240px;
+        padding: 2rem 1rem 1rem;
+    }
+
+    .post-it-content h4 {
+        font-size: 1.1rem;
+    }
+}
