@@ -1137,203 +1137,215 @@ footer {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+}
 
-    /* TelTec Bridge Section */
-    .teltec-bridge {
-        padding: 100px 5%;
-        background: linear-gradient(180deg, var(--bg-dark), #0f172a);
-        position: relative;
-        overflow: hidden;
-    }
+/* TelTec Bridge Section */
+.teltec-bridge {
+    padding: 120px 5%;
+    background: url('img/teltec_bridge_rural_tech.webp') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
 
-    /* Background Effect */
-    .teltec-bridge::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(circle, rgba(37, 99, 235, 0.05), transparent 70%);
-        border-radius: 50%;
-        z-index: 1;
-        pointer-events: none;
-    }
+/* Dark Overlay for Background readability */
+.teltec-bridge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.95) 100%);
+    z-index: 1;
+}
 
-    .bridge-container {
-        max-width: 900px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-        text-align: center;
-    }
+.bridge-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
 
-    .badge-bridge {
-        display: inline-block;
-        padding: 0.5rem 1.2rem;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 30px;
-        color: white;
-        font-size: 0.9rem;
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
+.badge-bridge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.6rem 1.5rem;
+    background: rgba(37, 99, 235, 0.2);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    border-radius: 50px;
+    color: #60a5fa;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    backdrop-filter: blur(5px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
+.bridge-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.bridge-story {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bridge-story p {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.bridge-story strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.security-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sec-card {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: left;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    height: 100%;
+}
+
+.sec-card:hover {
+    transform: translateY(-5px);
+}
+
+.sec-card.risk {
+    border-top: 4px solid #ef4444;
+}
+
+.sec-card.safe {
+    border-top: 4px solid #22c55e;
+    background: linear-gradient(145deg, rgba(34, 197, 94, 0.1), rgba(30, 41, 59, 0.8));
+}
+
+.sec-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.sec-icon i {
+    width: 28px;
+    height: 28px;
+}
+
+.risk .sec-icon {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.safe .sec-icon {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.sec-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.sec-card p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.sec-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.motivation-block {
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+}
+
+.motivation-block h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    background: linear-gradient(90deg, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quote-box {
+    margin-top: 3rem;
+}
+
+.quote-box blockquote {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: white;
+    font-family: 'Space Grotesk', serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quote-box cite {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Responsive adjustments for bridge */
+@media (max-width: 900px) {
     .bridge-content h2 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-        background: linear-gradient(135deg, white, #cbd5e1);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .bridge-story {
-        font-size: 1.25rem;
-        line-height: 1.8;
-        color: var(--text-muted);
-        margin-bottom: 4rem;
-    }
-
-    .bridge-story strong {
-        color: white;
-        font-weight: 600;
+        font-size: 2.5rem;
     }
 
     .security-comparison {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin-bottom: 4rem;
-        flex-wrap: wrap;
-    }
-
-    .sec-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 2rem;
-        flex: 1;
-        min-width: 280px;
-        text-align: left;
-        transition: var(--transition);
-    }
-
-    .sec-card.risk {
-        border-color: rgba(239, 68, 68, 0.3);
-    }
-
-    .sec-card.safe {
-        border-color: rgba(34, 197, 94, 0.3);
-        background: linear-gradient(145deg, rgba(34, 197, 94, 0.05), var(--bg-card));
-    }
-
-    .sec-icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .risk .sec-icon {
-        background: rgba(239, 68, 68, 0.1);
-        color: #ef4444;
-    }
-
-    .safe .sec-icon {
-        background: rgba(34, 197, 94, 0.1);
-        color: #22c55e;
-    }
-
-    .sec-card h4 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .sec-arrow {
-        font-size: 2rem;
-        color: var(--text-muted);
-        animation: slideRight 1.5s infinite running;
-    }
-
-    @keyframes slideRight {
-
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-
-        50% {
-            transform: translateX(5px);
-        }
-    }
-
-    .motivation-block {
-        margin-bottom: 4rem;
-        padding: 3rem;
-        background: rgba(255, 255, 255, 0.02);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .motivation-block h3 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: white;
-    }
-
-    .motivation-block p {
-        font-size: 1.1rem;
-        color: var(--text-muted);
-    }
-
-    .quote-box {
-        position: relative;
-        padding: 0 2rem;
-    }
-
-    .quote-box blockquote {
-        font-size: 1.5rem;
-        font-style: italic;
-        color: white;
-        font-family: 'Space Grotesk', serif;
-        /* Or serif font if available */
-        margin-bottom: 1rem;
-    }
-
-    .quote-box cite {
-        font-size: 1rem;
-        color: var(--primary);
-        font-weight: 600;
-        font-style: normal;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    /* Responsive adjustments for bridge */
-    @media (max-width: 768px) {
-        .bridge-content h2 {
-            font-size: 2rem;
-        }
-
-        .security-comparison {
-            flex-direction: column;
-        }
-
-        .sec-arrow {
-            transform: rotate(90deg);
-            margin: 1rem 0;
-        }
-
-        .quote-box blockquote {
-            font-size: 1.2rem;
-        }
+        transform: rotate(90deg);
     }
 }
