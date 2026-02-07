@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios | Teltec Dynamics</title>
+    <meta name="description"
+        content="Explora el catálogo completo de soluciones digitales de TelTec Dynamics: Cloud, Automatización, IA y más.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .catalog-hero {
+            padding: 160px 5% 80px;
+            background: linear-gradient(180deg, #0f172a 0%, var(--bg-dark) 100%);
+            text-align: center;
+        }
+
+        .catalog-grid {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .catalog-category {
+            margin-bottom: 80px;
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .category-title i {
+            color: var(--primary);
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-detail-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: var(--transition);
+        }
+
+        .service-detail-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .service-detail-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .service-detail-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .feature-list i {
+            color: var(--primary);
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .catalog-cta {
+            background: var(--bg-card);
+            border: 1px solid var(--primary);
+            padding: 60px;
+            border-radius: 30px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .sector-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .sector-card i {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav id="navbar" class="scrolled">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i data-lucide="cpu"></i>
+            </div>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <span class="logo-text">Teltec<span class="text-accent">Dynamics</span></span>
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#services">Inicio</a>
+            <a href="#growth">Crecimiento</a>
+            <a href="#operations">Operaciones</a>
+            <a href="#scale">Escala</a>
+            <a href="index.html#contact" class="btn btn-sm">Contactar</a>
+        </div>
+    </nav>
+
+    <header class="catalog-hero">
+        <span class="badge">Portafolio Completo 2026</span>
+        <h1 class="text-gradient">Nuestro Ecosistema de Soluciones</h1>
+        <p style="max-width: 700px; margin: 20px auto;">Descubre cómo cada pilar de TelTec Dynamics impulsa tu negocio
+            hacia la eficiencia absoluta.</p>
+    </header>
+
+    <main class="catalog-grid">
+        <!-- Growth -->
+        <section class="catalog-category" id="growth">
+            <div class="category-title">
+                <i data-lucide="trending-up"></i>
+                <h2>Crecimiento (Growth)</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-detail-card">
+                    <h3>Automatización Conversacional</h3>
+                    <p>Bots de alto nivel que hablan como humanos y cierran ventas 24/7.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> WhatsApp Business API Integration</li>
+                        <li><i data-lucide="check-circle"></i> Flujos de Venta Omnicanal (IG/FB)</li>
+                        <li><i data-lucide="check-circle"></i> Agendamiento Automático de Citas</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <h3>Marketing Automation</h3>
+                    <p>Convierte a extraños en clientes recurrentes sin esfuerzo manual.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Embudos de Venta Automatizados</li>
+                        <li><i data-lucide="check-circle"></i> Integración con CRMs (HubSpot, Zoho)</li>
+                        <li><i data-lucide="check-circle"></i> Notificaciones Críticas (SMS/Email)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Control/Operations -->
+        <section class="catalog-category" id="operations">
+            <div class="category-title">
+                <i data-lucide="settings"></i>
+                <h2>Control (Operations)</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-detail-card">
+                    <h3>Data Analytics & BI</h3>
+                    <p>Decide con datos reales centralizados en un solo lugar.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Dashboards en Looker Studio</li>
+                        <li><i data-lucide="check-circle"></i> Data Warehouse con BigQuery</li>
+                        <li><i data-lucide="check-circle"></i> Pipelines de Datos Automáticos</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <h3>Facturación Electrónica</h3>
+                    <p>Cumplimiento legal total con tecnología de microservicios.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Módulo SAR Honduras (Res. 032-2024)</li>
+                        <li><i data-lucide="check-circle"></i> Firma Digital X.509</li>
+                        <li><i data-lucide="check-circle"></i> Validación con Inteligencia Artificial</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <h3>Orquestación de Procesos</h3>
+                    <p>El "pegamento" que conecta todos tus sistemas actuales.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Workflows complejos con n8n</li>
+                        <li><i data-lucide="check-circle"></i> Sincronización de Inventarios/ERP</li>
+                        <li><i data-lucide="check-circle"></i> Sistemas de Aprobación Corporativa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scale -->
+        <section class="catalog-category" id="scale">
+            <div class="category-title">
+                <i data-lucide="cloud"></i>
+                <h2>Escalabilidad (Scale)</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-detail-card">
+                    <h3>Google Cloud Services</h3>
+                    <p>Infraestructura escalable que soporta el futuro de tu empresa.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Cloud Run & Compute Engine</li>
+                        <li><i data-lucide="check-circle"></i> AI Agents con Vertex AI</li>
+                        <li><i data-lucide="check-circle"></i> Document AI (OCR & Parsing)</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <h3>Ciberseguridad & Cloud Ops</h3>
+                    <p>Tu nube, protegida y optimizada bajo nuestras reglas.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Despliegue con Dokploy (Docker)</li>
+                        <li><i data-lucide="check-circle"></i> Gestión Multi-Cloud (AWS/Azure)</li>
+                        <li><i data-lucide="check-circle"></i> Migración de Sistemas Legacy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Specials -->
+        <section class="catalog-category">
+            <div class="category-title">
+                <i data-lucide="layers"></i>
+                <h2>Especiales por Sector</h2>
+            </div>
+            <div class="sector-grid">
+                <div class="sector-card">
+                    <i data-lucide="shopping-cart"></i>
+                    <h4>Retail & Ecommerce</h4>
+                </div>
+                <div class="sector-card">
+                    <i data-lucide="truck"></i>
+                    <h4>Logística</h4>
+                </div>
+                <div class="sector-card">
+                    <i data-lucide="stethoscope"></i>
+                    <h4>Salud</h4>
+                </div>
+                <div class="sector-card">
+                    <i data-lucide="hotel"></i>
+                    <h4>Hospitalidad</h4>
+                </div>
+                <div class="sector-card">
+                    <i data-lucide="land-plot"></i>
+                    <h4>Inmobiliaria</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-cta">
+            <h2>¿Listo para digitalizar tu negocio?</h2>
+            <p>Agenda una consultoría técnica gratuita hoy mismo.</p>
+            <br>
+            <a href="index.html#contact" class="btn btn-primary btn-lg">Contactar Especialista</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i data-lucide="cpu"></i> Teltec<span class="text-accent">Dynamics</span>
+            </div>
+            <p class="copyright">&copy; 2026 Teltec Dynamics. San Pedro Sula, Honduras.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mouse glow effect
+        const cursorGlow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+
+</html>
