@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teltec Dynamics | Soluciones Digitales de Nueva Generación</title>
-    <meta name="description" content="Agencia de desarrollo web y soluciones digitales. Transformamos tu visión en realidad digital con tecnología de punta.">
-    
+    <meta name="description"
+        content="Agencia de desarrollo web y soluciones digitales. Transformamos tu visión en realidad digital con tecnología de punta.">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
     <div class="cursor-glow"></div>
@@ -28,7 +33,7 @@
             </div>
             <span class="logo-text">Teltec<span class="text-accent">Dynamics</span></span>
         </div>
-        
+
         <div class="nav-links">
             <a href="#services">Servicios</a>
             <a href="#portfolio">Portafolio</a>
@@ -43,107 +48,331 @@
 
     <header class="hero" id="home">
         <div class="hero-content">
-            <span class="badge">Innovación Digital</span>
-            <h1>Construyendo el <br> <span class="text-gradient">Futuro Digital</span></h1>
-            <p>Teltec Dynamics fusiona diseño vanguardista con ingeniería robusta para crear experiencias web que definen marcas.</p>
+            <span class="badge">Tecnología Enterprise</span>
+            <h1>Digitaliza, automatiza y escala <br> <span class="text-gradient">sin pagar de más</span></h1>
+            <p>Infraestructura propia y sistemas que trabajan 24/7. En TelTec no vendemos horas, vendemos resultados.
+            </p>
             <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Iniciar Proyecto <i data-lucide="arrow-right"></i></a>
-                <a href="#portfolio" class="btn btn-outline">Ver Trabajo</a>
+                <a href="#contact" class="btn btn-primary">Quiero una asesoría gratuita <i
+                        data-lucide="arrow-right"></i></a>
+                <a href="#services" class="btn btn-outline">Ver Soluciones</a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="code-block">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
+            <div class="dashboard-widget">
+                <div class="widget-header">
+                    <div class="widget-title"><i data-lucide="activity"></i> Rendimiento en Vivo</div>
+                    <div class="live-indicator"><span class="blink"></span> ONLINE</div>
                 </div>
-                <code>
-                    <span class="c-keyword">const</span> <span class="c-var">future</span> = <span class="c-keyword">new</span> <span class="c-class">DigitalReality</span>();<br>
-                    <span class="c-var">future</span>.<span class="c-method">innovate</span>({<br>
-                    &nbsp;&nbsp;design: <span class="c-string">'premium'</span>,<br>
-                    &nbsp;&nbsp;performance: <span class="c-num">100</span><br>
-                    });
-                </code>
+                <div class="widget-body">
+                    <div class="stat-row">
+                        <div class="stat-item">
+                            <span class="label">Ventas Hoy</span>
+                            <span class="value">$1,240</span>
+                            <span class="trend up"><i data-lucide="trending-up"></i> +12%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Leads</span>
+                            <span class="value">45</span>
+                            <span class="trend up"><i data-lucide="trending-up"></i> +8%</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Simulated Chart Bars -->
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 45%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 65%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                        <div class="bar active" style="height: 100%"></div>
+                    </div>
+                    <div class="bot-status">
+                        <div class="bot-icon"><i data-lucide="bot"></i></div>
+                        <div class="bot-info">
+                            <span class="bot-name">AutoBot TelTec</span>
+                            <span class="bot-action">Respondiendo a 3 clientes...</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="services" id="services">
         <div class="section-header">
-            <h2>Nuestros Servicios</h2>
+            <h2>Nuestras Soluciones</h2>
             <div class="divider"></div>
-            <p>Soluciones integrales para tu presencia en línea.</p>
+            <p>Todo lo que necesitas para operar y crecer tu negocio.</p>
         </div>
-        
+
         <div class="grid">
+            <!-- 1. Automatización Conversacional -->
             <div class="card service-card">
                 <div class="icon-box">
-                    <i data-lucide="layout"></i>
+                    <i data-lucide="message-square"></i>
                 </div>
-                <h3>Diseño UI/UX</h3>
-                <p>Interfaces intuitivas y estéticamente impactantes que cautivan a tus usuarios desde el primer clic.</p>
+                <h3>Bots & Chatbots</h3>
+                <p>Automatización de WhatsApp, Instagram y Messenger. Responde 24/7 y captura clientes mientras duermes.
+                </p>
             </div>
-            
+
+            <!-- 2. Integración de Procesos -->
             <div class="card service-card">
                 <div class="icon-box">
-                    <i data-lucide="code-2"></i>
+                    <i data-lucide="workflow"></i>
                 </div>
-                <h3>Desarrollo Web</h3>
-                <p>Sitios rápidos, seguros y escalables construidos con las últimas tecnologías del mercado.</p>
+                <h3>Integración & Flujos</h3>
+                <p>Conectamos tus sistemas (CRM, ERP, Sheets) con n8n. Elimina tareas manuales y errores humanos.</p>
             </div>
-            
+
+            <!-- 3. Data Analytics -->
             <div class="card service-card">
                 <div class="icon-box">
-                    <i data-lucide="rocket"></i>
+                    <i data-lucide="bar-chart-2"></i>
                 </div>
-                <h3>SEO & Performance</h3>
-                <p>Optimizamos cada línea de código para asegurar máxima velocidad y visibilidad en buscadores.</p>
+                <h3>Data & BI</h3>
+                <p>Dashboards en tiempo real. Visualiza tus ventas y KPIs clave para tomar decisiones basadas en datos.
+                </p>
+            </div>
+
+            <!-- 4. IA Aplicada -->
+            <div class="card service-card">
+                <div class="icon-box">
+                    <i data-lucide="brain"></i>
+                </div>
+                <h3>Inteligencia Artificial</h3>
+                <p>Modelos predictivos y NLP para entender a tus clientes y predecir tendencias de mercado.</p>
+            </div>
+
+            <!-- 5. Desarrollo Web -->
+            <div class="card service-card">
+                <div class="icon-box">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3>Desarrollo a Medida</h3>
+                <p>Sistemas web, APIs y Landing Pages de alta conversión. Tecnología robusta y escalable.</p>
+            </div>
+
+            <!-- 6. Hosting & Soporte -->
+            <div class="card service-card">
+                <div class="icon-box">
+                    <i data-lucide="cloud"></i>
+                </div>
+                <h3>Infraestructura Multi-Cloud</h3>
+                <p>Expertos en GCP, pero gestionamos tu AWS o Azure. Seguridad, backups y monitoreo sin importar tu
+                    nube.</p>
             </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <!-- Eco-sistema Tree Visualization -->
+    <section class="ecosystem">
         <div class="section-header">
-            <h2>Portafolio Destacado</h2>
+            <h2>Eco-sistema TelTec</h2>
             <div class="divider"></div>
+            <p>Conectamos todas las piezas para que tu negocio funcione solo.</p>
         </div>
-        
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <div class="portfolio-img-container">
-                    <!-- Placeholder for portfolio image. In a real scenario, we'd use a screenshot of the Sapo project -->
-                    <div class="portfolio-overlay">
-                        <h3>Bienes y Raíces El Sapo</h3>
-                        <p>Plataforma inmobiliaria premium</p>
-                        <a href="#" class="btn btn-sm btn-light">Ver Caso</a>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="El Sapo Real Estate" class="portfolio-img">
-                </div>
-                <div class="portfolio-info">
-                    <h4>Bienes y Raíces El Sapo</h4>
-                    <div class="tags">
-                        <span>Diseño Web</span>
-                        <span>Branding</span>
-                    </div>
-                </div>
+
+        <div class="tree-container">
+            <!-- Root -->
+            <div class="tree-node root-node">
+                <div class="node-icon"><i data-lucide="briefcase"></i></div>
+                <span>Tu Negocio</span>
+                <div class="connector-line"></div>
             </div>
 
-            <div class="portfolio-item">
-                <div class="portfolio-img-container">
-                    <div class="portfolio-overlay">
-                        <h3>FinTech Solutions</h3>
-                        <p>Dashboard financiero corporativo</p>
-                        <a href="#" class="btn btn-sm btn-light">Ver Caso</a>
+            <!-- Branches Wrapper -->
+            <div class="branches">
+
+                <!-- Branch 1: Growth -->
+                <div class="branch">
+                    <div class="branch-connector"></div>
+                    <div class="tree-node category-node growth">
+                        <div class="node-icon"><i data-lucide="trending-up"></i></div>
+                        <span>Crecimiento</span>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="FinTech Dashboard" class="portfolio-img">
+                    <div class="leaf-nodes">
+                        <div class="leaf">
+                            <i data-lucide="message-circle" class="leaf-icon"></i>
+                            Bots (Vertex AI)
+                        </div>
+                        <div class="leaf">
+                            <i data-lucide="monitor" class="leaf-icon"></i>
+                            Landing Pages
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-info">
-                    <h4>Nova FinTech</h4>
-                    <div class="tags">
-                        <span>App Web</span>
-                        <span>React</span>
+
+                <!-- Branch 2: Control -->
+                <div class="branch">
+                    <div class="branch-connector central"></div>
+                    <div class="tree-node category-node control">
+                        <div class="node-icon"><i data-lucide="sliders"></i></div>
+                        <span>Control</span>
                     </div>
+                    <div class="leaf-nodes">
+                        <div class="leaf">
+                            <i data-lucide="workflow" class="leaf-icon"></i>
+                            n8n Workflows
+                        </div>
+                        <div class="leaf">
+                            <i data-lucide="pie-chart" class="leaf-icon"></i>
+                            BigQuery / BI
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch 3: Scale -->
+                <div class="branch">
+                    <div class="branch-connector"></div>
+                    <div class="tree-node category-node scale">
+                        <div class="node-icon"><i data-lucide="server"></i></div>
+                        <span>Escalabilidad</span>
+                    </div>
+                    <div class="leaf-nodes">
+                        <div class="leaf">
+                            <i data-lucide="shield" class="leaf-icon"></i>
+                            Cloud Security
+                        </div>
+                        <div class="leaf">
+                            <i data-lucide="cpu" class="leaf-icon"></i>
+                            Cloud Run / APIs
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TelTec -->
+    <section class="why-teltec">
+        <div class="section-header">
+            <h2>¿Por qué TelTec?</h2>
+            <div class="divider"></div>
+            <p>La tecnología tradicional es costosa y lenta. Nosotros somos diferentes.</p>
+        </div>
+        <div class="comparison-grid">
+            <div class="comparison-card old-way">
+                <h3>🚫 La Vieja Escuela</h3>
+                <ul>
+                    <li>Pierden tiempo en procesos manuales</li>
+                    <li>Usan WhatsApp sin control ni métricas</li>
+                    <li>Pagan servicios inflados que no entienden</li>
+                    <li>Soporte lento e ineficiente</li>
+                </ul>
+            </div>
+            <div class="comparison-card new-way">
+                <h3>✅ TelTec Way</h3>
+                <ul>
+                    <li>Automatización real 24/7</li>
+                    <li>Control total de chats y ventas</li>
+                    <li>Costos justos y transparentes</li>
+                    <li>Infraestructura moderna y escalable</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2>Planes Simples</h2>
+            <div class="divider"></div>
+            <p>Empieza pequeño, escala rápido.</p>
+        </div>
+        <div class="pricing-grid">
+            <!-- PyME Digital -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>PyME Digital</h3>
+                    <div class="price"><span>Desde</span> $25<span>/mes</span></div>
+                    <p>Ideal para negocios que inician</p>
+                </div>
+                <ul class="features">
+                    <li><i data-lucide="check"></i> Landing Page Ventas</li>
+                    <li><i data-lucide="check"></i> Hosting Cloud Incluido</li>
+                    <li><i data-lucide="check"></i> SSL & Seguridad</li>
+                    <li><i data-lucide="check"></i> Soporte Básico</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline w-100">Elegir Plan</a>
+            </div>
+
+            <!-- Automatización Pro -->
+            <div class="pricing-card featured">
+                <div class="badge-popular">Más Popular</div>
+                <div class="pricing-header">
+                    <h3>Automatización Pro</h3>
+                    <div class="price"><span>Desde</span> $80<span>/mes</span></div>
+                    <p>Para negocios en crecimiento</p>
+                </div>
+                <ul class="features">
+                    <li><i data-lucide="check"></i> <strong>Todo lo de PyME +</strong></li>
+                    <li><i data-lucide="check"></i> Bots de WhatsApp (n8n)</li>
+                    <li><i data-lucide="check"></i> Chat Omnicanal</li>
+                    <li><i data-lucide="check"></i> Automatizaciones Básicas</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary w-100">Escalar Ahora</a>
+            </div>
+
+            <!-- Empresa Custom -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Empresa Custom</h3>
+                    <div class="price">A Medida</div>
+                    <p>Para operaciones complejas</p>
+                </div>
+                <ul class="features">
+                    <li><i data-lucide="check"></i> Infraestructura Dedicada</li>
+                    <li><i data-lucide="check"></i> Alta Disponibilidad</li>
+                    <li><i data-lucide="check"></i> Sistemas Complejos</li>
+                    <li><i data-lucide="check"></i> Soporte Prioritario</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline w-100">Cotizar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TelTec Bridge & Motivation -->
+    <section class="teltec-bridge">
+        <div class="bridge-container">
+            <div class="bridge-content">
+                <span class="badge-bridge">Honduras 🇭🇳 x Google Cloud ☁️</span>
+                <h2>Tecnología Elite para Nuestra Gente</h2>
+                <div class="bridge-story">
+                    <p>TelTec es el puente que conecta el potencial de nuestra tierra con la potencia de la nube.
+                        Desde un <strong>ganadero en Olancho</strong> o un <strong>agricultor en El Paraíso</strong>,
+                        hasta un
+                        comercio en la ciudad. Llevamos tecnología de Silicon Valley a manos de hondureños
+                        emprendedores.</p>
+                </div>
+
+                <div class="security-comparison">
+                    <div class="sec-card risk">
+                        <div class="sec-icon"><i data-lucide="alert-triangle"></i></div>
+                        <h4>Lo Antiguo (Riesgoso)</h4>
+                        <p>Servidores físicos que fallan, Excel vulnerable y datos expuestos a virus o robos.</p>
+                    </div>
+                    <div class="sec-arrow"><i data-lucide="arrow-right"></i></div>
+                    <div class="sec-card safe">
+                        <div class="sec-icon"><i data-lucide="shield-check"></i></div>
+                        <h4>Tu Nueva Nube (Blindada)</h4>
+                        <p>Infraestructura Google: Encriptación militar, disponibilidad 99.9% y acceso seguro desde
+                            cualquier lugar.</p>
+                    </div>
+                </div>
+
+                <div class="motivation-block">
+                    <h3>Creemos en Dios, la Ciencia y la Tecnología</h3>
+                    <p>No solo escribimos código; construimos futuro. Creemos que con fe y herramientas correctas,
+                        los hondureños podemos competir y ganar a nivel mundial.</p>
+                </div>
+
+                <div class="quote-box">
+                    <blockquote>"El secreto del cambio es enfocar toda tu energía, no en luchar contra lo viejo, sino en
+                        construir lo nuevo."</blockquote>
+                    <cite>— Sócrates</cite>
                 </div>
             </div>
         </div>
@@ -151,52 +380,67 @@
 
     <section class="cta-section">
         <div class="cta-content">
-            <h2>¿Listo para transformar tu negocio?</h2>
-            <p>Llevamos tu idea al siguiente nivel digital.</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Hablemos Ahora</a>
+            <h2>¿No sabes qué plan necesitas?</h2>
+            <p>Agenda una llamada rápida y te asesoramos sin compromiso.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Asesoría Gratuita</a>
         </div>
     </section>
 
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-info">
-                <h2>Contáctanos</h2>
-                <p>Estamos listos para escuchar tu proyecto.</p>
-                
+                <h2>Hablemos de tu Negocio</h2>
+                <p>Agenda una asesoría gratuita y descubre cómo ahorrar tiempo y vender más.</p>
+
                 <div class="info-item">
-                    <i data-lucide="mail"></i>
-                    <span>hola@teltecdynamics.com</span>
+                    <div class="icon-circle">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <div>
+                        <strong>Ventas & Soporte</strong>
+                        <br><span>hola@teltec.hn</span>
+                    </div>
                 </div>
                 <div class="info-item">
-                    <i data-lucide="map-pin"></i>
-                    <span>Tegucigalpa, Honduras</span>
-                </div>
-                <div class="info-item">
-                    <i data-lucide="phone"></i>
-                    <span>+504 2200-TECH</span>
+                    <div class="icon-circle">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div>
+                        <strong>Oficinas</strong>
+                        <br><span>Tegucigalpa, Honduras</span>
+                    </div>
                 </div>
 
                 <div class="social-links">
-                    <a href="#"><i data-lucide="github"></i></a>
-                    <a href="#"><i data-lucide="linkedin"></i></a>
-                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Github"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
                 </div>
             </div>
-            
-            <form class="contact-form">
+
+            <form class="contact-form" action="https://formspree.io/f/mwvnkopl" method="POST">
                 <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
                 </div>
                 <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="tu@email.com">
+                    <label>Email o WhatsApp</label>
+                    <input type="text" name="contact" placeholder="tu@email.com" required>
                 </div>
                 <div class="form-group">
-                    <label>Mensaje</label>
-                    <textarea rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    <label>¿Qué necesitas?</label>
+                    <select name="interest" class="form-select">
+                        <option value="asesoria">Asesoría Gratuita</option>
+                        <option value="pyme">Plan PyME ($25/m)</option>
+                        <option value="auto">Automatización ($80/m)</option>
+                        <option value="custom">Proyecto a Medida</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                <div class="form-group">
+                    <label>Mensaje (Opcional)</label>
+                    <textarea name="message" rows="3" placeholder="Cuéntanos un poco más..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Solicitar Asesoría</button>
             </form>
         </div>
     </section>
@@ -233,10 +477,10 @@
         // Mobile Menu Toggle (Simple implementation)
         const mobileBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileBtn.addEventListener('click', () => {
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if(navLinks.style.display === 'flex') {
+            if (navLinks.style.display === 'flex') {
                 navLinks.style.flexDirection = 'column';
                 navLinks.style.position = 'absolute';
                 navLinks.style.top = '100%';
@@ -249,4 +493,5 @@
         });
     </script>
 </body>
+
 </html>
